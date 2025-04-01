@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Devoir NSI Lilou </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../styles/style-de-Tom.css" type="text/css" />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> Devoir Spécialité <br/>
+		NSI </p>
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th> <a href="../index.html">Accueil</a> </th>
+		<th> <a href="Fiche1.html">Fiche 1</a> </th>
+		<th> <a href="Fiche2.html">Fiche 2</a> </th>
+		<th> <a href="Fiche3.html">Fiche 3</a> </th>
+		<th> <a href="Fiche4.html">Fiche 4</a> </th>
+		<th> <a href="Fiche5.html">Fiche 5</a> </th>
+		<th> <a href="Fiche6.html">Fiche 6</a> </th>
+		<th> <a href="Fiche7.html">Fiche 7</a> </th>
+		<th> <a href="Fiche8.html">Fiche 8</a> </th>
+		<th> <a href="Fiche9.html">Fiche 9</a> </th>
+		<th> <a href="Fiche10.html">Fiche 10</a> </th>
+		<th> <a href="Fiche11.html">Fiche 11</a> </th>
+		<th> <a href="Fiche12.html">Fiche 12</a> </th>
+		<th> <a href="Fiche13.html">Fiche 13</a> </th>
+		<th> <a href="Fiche14.html">Fiche 14</a> </th>
+		<th> <a href="Fiche15.html">Fiche 15</a> </th>
+		<th> <a href="Fiche16.html">Fiche 16</a> </th>
+		<th> <a href="Fiche17.html">Fiche 17</a> </th>
+		<th> <a href="Fiche18.html">Fiche 18</a> </th>
+		<th> <a href="Fiche19.html">Fiche 19</a> </th>
+		<th> <a href="Fiche20.html">Fiche 20</a> </th>
+	</tr>
+	</table> <br/> 
+	
+	<div id="contenu">
+		<h1> FICHE 6 </h1>
+		<h2> Encodage d'un texte:</h2>
+		<h3> Code ASCII: </h3>
+		<p>ASCII=American Standart Code for Infrrmation Interchange</p>
+		<p>ASCII utilise 7 bits (128 carcs total (0 à 127))</p>
+		<ul>
+		<p> 0 à 31 carctères de contrôlie (faire actions) <br/>48 à 57 sont les chiffres <br/>65 à 90 sont les majuscules <br/>97 à 122 sont es minuscules </p>
+		</ul>
+		<p>Les derniers sont les accolades, tildes,... </p> 
+		<p>ord('k')=donne le code ASCII de k, ch(84)=donne la lettre correspondant a 84 soit T</p>
+	
+		<h3> ISO-8859: </h3>
+		<p>8 bits donc trop petit (peut pas écrire arabe, chinois,...)</p>
+		
+		<h3> Unicode: </h3>
+		<p>0xxxxxxx = 1 octet codant 1 à 7 bits<br/> 110xxxxx 10xxxxxx = 2 octets codant 11 bits<br/> ...</p>
+	
+		<h2> Chaines de caracteres:</h2>
+		<p>	Elles sont entre " ", 1ere lettre=indice 0</p>
+		<ul>
+		<p>mot.upper() renvoie chaine mot en Majuscule<br/>mot.lower() renvoie chaine mot en minuscule<br/>str(nb) renvoie chaine de carac contenant écriture décimale du nb<br/>int(ch) transforme chaine en valeur numérique entière<br/>float(ch) transforme chaine en valeur numérique flottante<br/> ch.count(texte) compte le nombre de fois où texte est présent dans ch<br/>ch.replace(txt1,txt2) remplace txt1 mar txt2 chaque fois qu'il apparait dans ch<br/>ch.find(texte) indique la position  dans la chaine ch où se trouve texte, renvoie -1 si texte nn'y est pas</p>
+		</ul>
+		
+		
+		
+	</div> <br/> 
+	
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : avril 2024 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Lilou </p>
+	</div> <br/> 
+
+</body>
+
+</html>

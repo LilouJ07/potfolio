@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Devoir NSI Lilou </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../styles/style-de-Tom.css" type="text/css" />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> Devoir Spécialité <br/>
+		NSI </p>
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th> <a href="../index.html">Accueil</a> </th>
+		<th> <a href="Fiche1.html">Fiche 1</a> </th>
+		<th> <a href="Fiche2.html">Fiche 2</a> </th>
+		<th> <a href="Fiche3.html">Fiche 3</a> </th>
+		<th> <a href="Fiche4.html">Fiche 4</a> </th>
+		<th> <a href="Fiche5.html">Fiche 5</a> </th>
+		<th> <a href="Fiche6.html">Fiche 6</a> </th>
+		<th> <a href="Fiche7.html">Fiche 7</a> </th>
+		<th> <a href="Fiche8.html">Fiche 8</a> </th>
+		<th> <a href="Fiche9.html">Fiche 9</a> </th>
+		<th> <a href="Fiche10.html">Fiche 10</a> </th>
+		<th> <a href="Fiche11.html">Fiche 11</a> </th>
+		<th> <a href="Fiche12.html">Fiche 12</a> </th>
+		<th> <a href="Fiche13.html">Fiche 13</a> </th>
+		<th> <a href="Fiche14.html">Fiche 14</a> </th>
+		<th> <a href="Fiche15.html">Fiche 15</a> </th>
+		<th> <a href="Fiche16.html">Fiche 16</a> </th>
+		<th> <a href="Fiche17.html">Fiche 17</a> </th>
+		<th> <a href="Fiche18.html">Fiche 18</a> </th>
+		<th> <a href="Fiche19.html">Fiche 19</a> </th>
+		<th> <a href="Fiche20.html">Fiche 20</a> </th>
+	</tr>
+	</table> <br/> 
+	
+	<div id="contenu">
+		<h1> FICHE 7  </h1>
+		
+		<h2> Les Tableaux: </h2>
+		
+		<p>Tableaux = listes (python) -> stock valeurs ou données dans une variable<br/>
+		Valeurs/données = éléments(elem) ou items de la liste.<br/>Les tableaux sont nutables/muables = modifiable après création.<br/>Le premier élément de la liste = indice 0.</p>
+		
+		<h3> Importantes Instructions: </h3>
+		
+		<ul>
+		<p>L=[e1,e2,...,en] = création liste L contenant éléments e1,...<br/>
+		L=[] = liste vide<br/>
+		L[i] = renvoie elem d'indice i<br/>
+		L[-1] = renvoie dernier elem de L<br/>
+		L[i]=elem = affecte à l'élément d'indice i l'élément elem<br/>
+		len(L) = renvoie la longueur de L<br/>
+		e in L = teste si e est dans L</p>
+		</ul>
+		
+		<ul>
+		<p>L.append(elem) = rajoute elem (à la fin de L)<br/>
+		L.insert(j,elem) = insère elem au rang j<br/>
+		L.remove(elem) = surprime le 1er elem dans L<br/>
+		L.pop(i) = supprime elem d'indice i dans L<br/>
+		[1,2]+[3+4] = concatène<br/>
+		L.reverse = inverse<br/>
+		L.count(elem) = compte les occurences de elem<br/>
+		L.index(elem) = trouve indice de elem<br/>
+		min(L), max(L) = trouve le plus petit, "" le plus grand<br/>
+		choice(L) = Choisit au hasard elem dans L (utilisation module Random) <br/>
+		L[ :m] = affiche les m premiers éléments de L<br/>
+		L.split(sep) = prend chaque mots et les sépare pour en faire une liste avec comme éléments les mots
+		list(ch) = prend chaque lettre et les sépare pourr en faire une liste comme éléments les lettres
+		</p>
+		</ul>
+		
+		<h4> Parcourir un tableau: </h4>
+		<ul>
+		<p>for i in range(len(L)):<br/>
+		for element in L:</p>
+		</ul>
+		
+		<h4> Echanger des éléments: </h4>
+		<ul>
+		<p>L[0],L[5]=L[5],L[0] cela inverse les valeurs 0 avec la 5 et la 5 avec 0</p>
+		</ul>
+		<p>Lorsqu'on créé une copie, celle ci et l'original ont la même adresse, ainsi si on en modifie un cela modifira l'autre. <br/>Pour éviter ce probleme il faut utiliser la méthode liste.deepcopy() du module copy.</p>
+		<p>list(range(4)) = créé la liste [0,1,2,3]</p>
+		<p>Il existe une façon de réduire le code, la construction par compréhension.</p>
+		
+		<h4> Tableaux de tableaux ou matrices: </h4>
+		<ul>
+		<p>Une matrice = tableaux de tableaux de même longueur<br/>
+		Exemple: Mat=[[1,2,3,4],[5,6,7,8],[9,10,11,12]] ->  6=Mat[1][1]</p>
+		</ul>
+		
+		<h1> FICHE 7 bis </h1>
+		
+		<h2> Les Tuples: </h2>
+		<ul>
+		<p>*Collection ordonnée d'éléments<br/>*Note avec des () séparés par , <br/>*Peut être affecté à une variable et une fonction peut retourner un tuple</p>
+		</ul>
+		<p> 1er élément=indice 0, un tuple à 1 seul élement doit avoir une , après</p>
+		<p>Extraire éléments: Utiliser affectation multiple ou indexation<br/> Affectation multiple permet d'échanger les valeurs de 2 variables sans passer par une variable </p>
+		<p>ex:coordonnees=(15,56) , coordonnees[1]=56<br/>a=3 , b=5,  a,b=b,a=(5,3)</p>
+		<p>Il peut y avoir des Tuples dans d'autres Tuples.</p>
+		
+		<h3> Propriétés: </h3>
+		<ul>
+		<p>*Un Tuple est immuable (1 fois construit on peut pas modifier contenu)<br/> *t=() tuple vide<br/>*Fonction utilisables: len,+,*,in<br/>*On ne peut pas ajouter un élément entre le 1er et le dernier (seulement au début et à la fin)</p>
+		</ul>
+		<h2> Les Dictionnaires: </h2>
+		
+		<p>Un dictionnaire est une sorte de liste où on utilise des clés (valeurs), on remplace les [ ] par des { }.</p>
+		<p>Les dicos sont muables ou mutables. <br/>dico={"Nom":Jouanolou} Nom-> clé, Jouanolou->valeur associée à clé </p>
+		
+		<h3> Opération: </h3>
+		<ul>
+		<p>- dico.keys() renvoie toutes les clés du dico.<br/> 
+		- dico.values renvoie toutes les valeurs du dico<br/> 
+		- dico.items renvoie tous les éléments de dico<br/> 
+		- dico.get(...) renvoie la valeur associée à la clé rentrée<br/>
+		- if "..." in dico: dire si il y est<br/>
+		- Parcourire le dico: for cle in dico:<br/>
+		- dico.copy() copie le dico<br/>
+		- del dico["computer"] supprime la clé et sa valeur</p>
+		</ul>
+		
+		
+		
+	</div> <br/> 
+	
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : avril 2024 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Lilou </p>
+	</div> <br/> 
+
+</body>
+
+</html>

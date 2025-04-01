@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Devoir NSI Lilou </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../styles/style-de-Tom.css" type="text/css" />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> Devoir Spécialité <br/>
+		NSI </p>
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th> <a href="../index.html">Accueil</a> </th>
+		<th> <a href="Fiche1.html">Fiche 1</a> </th>
+		<th> <a href="Fiche2.html">Fiche 2</a> </th>
+		<th> <a href="Fiche3.html">Fiche 3</a> </th>
+		<th> <a href="Fiche4.html">Fiche 4</a> </th>
+		<th> <a href="Fiche5.html">Fiche 5</a> </th>
+		<th> <a href="Fiche6.html">Fiche 6</a> </th>
+		<th> <a href="Fiche7.html">Fiche 7</a> </th>
+		<th> <a href="Fiche8.html">Fiche 8</a> </th>
+		<th> <a href="Fiche9.html">Fiche 9</a> </th>
+		<th> <a href="Fiche10.html">Fiche 10</a> </th>
+		<th> <a href="Fiche11.html">Fiche 11</a> </th>
+		<th> <a href="Fiche12.html">Fiche 12</a> </th>
+		<th> <a href="Fiche13.html">Fiche 13</a> </th>
+		<th> <a href="Fiche14.html">Fiche 14</a> </th>
+		<th> <a href="Fiche15.html">Fiche 15</a> </th>
+		<th> <a href="Fiche16.html">Fiche 16</a> </th>
+		<th> <a href="Fiche17.html">Fiche 17</a> </th>
+		<th> <a href="Fiche18.html">Fiche 18</a> </th>
+		<th> <a href="Fiche19.html">Fiche 19</a> </th>
+		<th> <a href="Fiche20.html">Fiche 20</a> </th>
+	</tr>
+	</table> <br/> 
+	
+	<div id="contenu">
+		<h1> FICHE 11 </h1>
+		
+		<h1> Les Algorithmes </h1>
+		
+		<p>-> Mathématicien perse Al-Khwârizmî (an 820) -> méthodes de résolution d'équation<br/>
+		-> Algorithme d'Euclide (300 avanc J-C) = PGCD de 2 nb entiers<br/>
+		-> Algorithme d'Archimède (250 avant J-C ) = calcule pi</p>
+		<p>Un algoritme = suite finie d'instructions permettant d'arriver à un résultat souhaité. <br/>
+		L'algorithmique est l'étude et la conception de règle permettant l'élaboration d'algorithmes.</p>
+		<p>Un algorithme n'est pas un programme !</p>
+		
+		<p>La performance des programmes = bcp d'importance<br/>
+		On peut la juger au niveau du temps (traitement d'un volume de données). <br/>
+		Et au niveau de l'espace mémoire utilisé au cours de l'exécution du programme.</p>
+		
+		<h3> Temps d'exécution d'un programme: </h3>
+		
+		<p> Pour cela on utilise:<br/>
+		<ul>
+		from time import*<br/>
+		debut=perf_counter()<br/>
+		#placer ici le code dont vous voulez mzsurer le temps d'exécution<br/>
+		fin=perf_counter()<br/>
+		print("Temps d'exécution: ", fin-debut)</p>
+		</ul>
+		<p> Ainsi on peut utiliser différents programme pour les comparer.<br/>
+		On peut en conclure: plus n (nombre de répétition) est grand, plus le temps augment.</p>
+		
+		<p>Avec les données de n qu'on a récupéré du programme ci-dessus:<br/>
+		 0n peut créer un tableau avec le programme:<br/>
+		 <ul>
+		 import matplotlib;pyplot as plt<br/>
+		 L= (tout les valeurs de n)<br/>
+		 temps= (toutes les valeur trouvées pour les programmes)<br/>
+		 plt.plot(L,temps)<br/>
+		 plt.show()
+		 </ul></p>
+		
+		<h4> Définition: </h4>
+		<p>Le coût d'un algorithme ou complexité algorithmique temporelle est le nombre d'opératio élémentaires (arithmétiques ou logiques) ainsi que d'affectations nécessaires à son exécution.</p>
+		
+		<P>Coût souvent approximatif ainsi on dira que le coût de l'algorithme de calcul de la moyenne de n nombres est de l'ordre de 2n.<br/>
+		Dans un algorithme à boucles, le coût est de l'ordre du nombre d'itérations effectuées.</p>
+		
+		<h4>Différents coûts: </h4>
+		
+		<p>Définition:<br/>
+		<ul>
+			- Coût constant = ne dépend pas de la taille de n des données en entrée => T(n) = O(1)<br/>
+			- Coût linéaire = son approximation est de la forme kn où k>0 =>  T(n) = O(n)<br/>
+			- Coût quadratique si son approximation est de la forme kn² où k>0 => T(n) = O(n²)<br/>
+			- Coût exponentiel = "l'orde" est de la forme d'une puissance où n apparaît en exposant
+		</ul></p>
+		<p> Si coût = 2n²+3n+1 alors son approximation = 2n² (quadratique)</p>
+		
+		<h4>Propriété: </h4>
+		<p>Calculer la complexité -> on doit examiner chaque ligne de code + leur attribuer un coût en temps.<br/>
+		Le coût n'aura pas d'unité car = nombre d'opération dont chacune aurait le même temps d'exécution: 1</p>
+		
+		<p>Opération et le coût:</p>
+		<ul>
+		<p> - Affectation = 1 unité de temps (ex: a=2)<br/>
+			- Comparaisons (comme les tests) = 1 unité de temps <br/>
+			- Accès aux mémoires = 1 unité de temps (ex: lire a)<br/>
+			- Opération élémentaire = 1 unité de temps (ex: 3+2)</p>
+		</ul>
+		<p>Ex: pour a=a+1 ->T(n) =1(affectation) + 1(accès à la mémoire a) + 1(addition) = 3</p>
+		
+		<p> Dans une fonction: def et return ne sont pas comptabilisées</p>
+		
+		
+		
+	</div> <br/> 
+	
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : avril 2024 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Lilou </p>
+	</div> <br/> 
+
+</body>
+
+</html>
