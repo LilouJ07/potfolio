@@ -1,0 +1,70 @@
+body, div {
+	margin: 25;
+	padding: 0;
+}
+body {	
+	background-color: black;
+	#background-image:url("../images/clavier.jpg");
+	
+	#background-size: 1500px 1050px;
+	#background-repeat: no-repeat;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	
+}
+img { 
+	float: right; 
+	margin-right: 10px;
+}
+th { width: 200px;}
+ul { list-style-type: square; }
+
+#entete-de-page {
+	padding: 20px;
+	height: 140px;
+	background-color: #444457;
+	
+	background-image:;
+	background-size: 1000px 200px;
+	font-size: 45px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+	font-style: italic
+
+	color:#black ;
+	
+}
+#bloc-menu {
+	height: 50px;
+	background-color: #636577 ;
+	#background-image: url("../images/feuille.jpg");
+	#background-size: 1300px 100px;
+	
+	float: center;
+	color: white;
+}
+#contenu {
+	padding: 60px;
+	
+	background-color: #4E4E58 ;
+	#background-image: url("../images/feuille.jpg");
+	#background-repeat: no-repeat;
+	#background-size: 1300px 1000px;
+	font-size: 20px;
+}
+#infos {
+	color: #C68C85;
+	
+	font-style: italic;
+}
+#pied-de-page {
+	padding: 5px;
+	background-color: #303036;
+	
+	
+	background-size: 1300px 400px;
+	font-size: 11px;
+}
+
+	
